@@ -1,3 +1,15 @@
+##### May 4th, 2017
+### [Learning to Estimate 3D Hand Pose from Single RGB Images](https://arxiv.org/abs/1705.01389)
+* [Github Repo](https://github.com/lmb-freiburg/hand3d)
+* This was a real fun one to experiment with
+* In summary, they created a network that took 2D images, identified hand gestures, and created 3D models of the hand based on a priori knowledge
+* They complement their dataset with 3D models with animations 
+* They augment the training images by altering the lighting in the 3D renders, adjusting the quality of exported JPGs, and specular reflections on the skin
+* All samples came with a 21 keypoint skeleton model of the hand, and 33 segmentation masks
+* The image goes through a network consisting of hand segmentation, crop and resize, PoseNet(localizes hand keypoints), and then PosePrior(estimates most likely 3D structure)
+* Able to also detect which hand orientation and gesture
+* Still seems up to optimization as their error rate was marginally better than the comparison they offered, but unlike the comparison, they didn't have 3D to work with from 2D RGB inputs
+
 ##### May 3rd, 2017
 ### [Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift](https://arxiv.org/abs/1502.03167)
 * Perform normalization for each mini-batch
