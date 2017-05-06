@@ -1,3 +1,12 @@
+##### May 6th, 2017
+### [Learning representations by back-propagating errors](https://www.iro.umontreal.ca/~vincentp/ift3395/lectures/backprop_old.pdf)
+* A three page landmark paper from 1986 that describes the process of back propagation
+* It's a procedure that repeatedly adjusts the weights of the connection to the a network in order to minimize the difference between the actual output vector (y) and desired output vector (final output)
+* This allows for the hidden layers of a network to change to represent the important features of the "task domain" not represented by the input or output
+* The learning procedure must decide what circumstances the hidden units should be active to achieved the desired input-output behavior
+* Total error (E) is defined as 1/2 * index over examples and index over output units, (y minus output)^2
+* To minimized E with gradient descent, necessary to calculate dE/dW as the sum of the partial derivatives for each input-output case 
+
 ##### May 4th, 2017
 ### [Learning to Estimate 3D Hand Pose from Single RGB Images](https://arxiv.org/abs/1705.01389)
 * [Github Repo](https://github.com/lmb-freiburg/hand3d)
